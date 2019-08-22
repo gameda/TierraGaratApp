@@ -1,0 +1,24 @@
+<resources>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_question">18sp</dimen>
+    <dimen name="comple_datos">17dp</dimen>
+    <dimen name="question_heigh">45dp</dimen>
+    <dimen name="space_btwn_questions">20dp</dimen>
+    <dimen name="square_dash">220dp</dimen>
+    <dimen name="button_mas_heigh">45dp</dimen>
+    <dimen name="button_mas_width">185dp</dimen>
+    <dimen name="button_mas_bottom">18dp</dimen>
+    <dimen name="data_dash_margin_top">75dp</dimen>
+    <dimen name="name_dash">20sp</dimen>
+    <dimen name="puntos_dash">35sp</dimen>
+    <dimen name="suma_text">18sp</dimen>
+    <dimen name="ajustes_padding_bttm">0dp</dimen>
+    <dimen name="back">600dp</dimen>
+    <dimen name="circle">60dp</dimen>
+    <dimen name="buttonSize">70dp</dimen>
+
+
+</resources>

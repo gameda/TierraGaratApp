@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    tools:context=".fragments.main.MenuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:layout_weight=".8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@mipmap/seccion"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backBttn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/tg2"
+                />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="4"
+                android:text="MENÚ"
+                android:textSize="15dp"
+                android:paddingBottom="@dimen/ajustes_padding_bttm"
+                android:textColor="@color/cafe2"
+                />
+        </LinearLayout>
+
+
+
+        <!--  android:background="@mipmap/tg"-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:id="@+id/tierra"
+        android:scaleType="centerCrop"
+        android:src="@drawable/menu_img"/>
+
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:divider="#FFCC00"
+        android:background="@color/white" />
+
+
+</LinearLayout>

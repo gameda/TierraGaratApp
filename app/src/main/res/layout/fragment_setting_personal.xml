@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    tools:context=".fragments.main.settings.SettingPersonalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:layout_weight=".8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="@mipmap/seccion"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:background="@color/transparente"
+                android:id="@+id/backBttn"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.25"
+                android:scaleY="1.5"
+                android:scaleX="1.5"
+                android:layout_gravity="center"
+                android:src="@mipmap/flecha_izquierda"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/personal"
+                android:textColor="@color/cafe2"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logoIV"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/tg2"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:id="@+id/tierra"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ajustes_img"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:background="@drawable/marco4">
+
+            <Button
+                android:id="@+id/nombreBttn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparente"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOMBRE COMPLETO"
+                android:textColor="@color/cafe2" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:imeOptions="actionNext"
+                android:layout_below="@+id/text3"
+                android:textColor="@color/cafe2"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/nombreBttn"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:layout_alignRight="@+id/nombreBttn"
+                />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:background="@drawable/marco4">
+
+            <Button
+                android:id="@+id/contraseñaBttn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparente"/>
+
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contrasena"
+                android:textColor="@color/cafe2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/cafe2"
+                android:text="********"
+                android:layout_below="@+id/text5"
+                android:id="@+id/text6"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/contraseñaBttn"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:layout_alignRight="@+id/contraseñaBttn" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:background="@drawable/marco4">
+
+            <Button
+                android:id="@+id/direccionBttn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparente"/>
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="DIRECCION"
+                android:textColor="@color/cafe2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:imeOptions="actionNext"
+                android:textColor="@color/cafe2"
+                android:layout_below="@+id/text9"
+                android:id="@+id/text10"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/direccionBttn"
+                android:src="@mipmap/ic_keyboard_arrow_right_black_36dp"
+                android:layout_alignRight="@+id/direccionBttn" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

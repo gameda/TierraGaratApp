@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    android:id="@+id/beneficioRow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/sucursalTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/cafe2"
+            android:text="SUCURSAL"/>
+
+
+        <TextView
+            android:id="@+id/estatusTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            android:text="ESTATUS"
+            android:gravity="end" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/marco3"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/distanciaTV"
+            android:layout_width="0dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textColor="@color/cafe2"
+            android:textAlignment="center"
+            android:background="@drawable/marco2"
+            android:text="Distancia \n Km"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.3">
+
+            <ImageView
+                android:id="@+id/markIV"
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/mapacafe"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/direccionTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/cafe2"
+            android:text="Jalap #99  Roma norte \n 06700, CDMX"
+            />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="0dp"
+            android:background="@mipmap/ic_keyboard_arrow_right_black_36dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"/>
+
+    </LinearLayout>
+
+</LinearLayout>

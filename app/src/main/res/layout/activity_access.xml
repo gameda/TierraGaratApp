@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AccessActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/fragmentView">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cafe4"
+        android:visibility="gone"
+        android:id="@+id/splash"
+        >
+
+        <TextView
+            android:id="@+id/sloganTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/loadIV"
+            android:text="México es \ncafé y chocolate"
+            android:textAlignment="center"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/loadIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/loadergarat"/>
+    </RelativeLayout>
+
+</RelativeLayout>

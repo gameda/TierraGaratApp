@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    tools:context=".fragments.main.settings.SettingPersonalNameFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:layout_weight=".8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:background="@mipmap/seccion"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:background="@color/transparente"
+                android:id="@+id/backBttn"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.25"
+                android:scaleY="1.5"
+                android:scaleX="1.5"
+                android:layout_gravity="center"
+                android:src="@mipmap/flecha_izquierda"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/personal"
+                android:textColor="@color/cafe2"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logoIV"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/tg2"
+            android:layout_marginStart="5dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:background="@drawable/marco4">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="@dimen/text_size_question"
+                android:textColor="@color/cafe2" />
+
+            <EditText
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/question_heigh"
+                android:layout_centerInParent="true"
+                android:background="@drawable/edittextstyle"
+                android:hint="@string/noms"
+                android:imeOptions="actionNext"
+                android:layout_below="@+id/text3"
+                android:singleLine="true"
+                android:textColor="@color/cafe2"
+                android:textSize="@dimen/text_size_question"
+                android:textCursorDrawable="@color/cafe2" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="20dp">
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="20dp">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/marco4">
+
+
+            <Button
+                android:id="@+id/saveBttn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/buttonSize"
+                android:textSize="@dimen/text_size_question"                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btnhoversxo"
+                android:text="GUARDAR"
+                android:textColor="@color/beige" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

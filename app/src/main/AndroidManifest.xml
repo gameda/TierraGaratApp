@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="mx.digitalcoaster.tierra_garat_puntos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.provider.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.example.googlemap.permission.MAPS_RECEIVE" />
+
+
+    <permission
+        android:name="mx.digitalcoaster.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="mx.digitalcoaster.tierra_garat_puntos.helpers.AnalyticsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/FullScreen.Theme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:theme">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+
+
+        <activity android:name=".activities.AccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activities.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            />
+
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+        </activity>
+
+
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:theme="@style/FullScreen.Theme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBMp3i60B-_rHCPZFQUVu9uUAEntz9MpZc" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="bf97656db04c7bad86a42a3390b7dd9a5da6bd9f"
+            />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/margenLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/subcategoriaTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:paddingLeft="5dp"
+            android:textColor="@color/cafe"
+            android:layout_marginTop="5dp"
+            android:text="DE LA CASA"/>
+
+
+        <LinearLayout
+            android:id="@+id/tamañoLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="6.2"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/line_cafe"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/line_cafe"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/cafe"
+                android:id="@+id/smallTV"
+                android:visibility="visible"
+                android:text="CH"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:id="@+id/mediTV"
+                android:textColor="@color/cafe"
+                android:textAlignment="center"
+                android:visibility="visible"
+                android:text="M"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/cafe"
+                android:id="@+id/bigTV"
+                android:visibility="visible"
+                android:text="G"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/productoLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/caliente"
+            android:layout_width="0dp"
+            android:layout_weight=".6"
+            android:src="@mipmap/bebidacaliente"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/frio"
+            android:layout_width="0dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/bebidafria"
+            android:layout_weight=".6"
+            android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/frape"
+            android:layout_width="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.6"
+            android:visibility="gone"
+            android:src="@mipmap/bebidafrappe"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:paddingLeft="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/productoTV"
+            android:textColor="@color/cafe"
+            android:text="ESPRESSO DOBLE CORTADO"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cafe"
+            android:id="@+id/chicoTV"
+
+            android:text="$10"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_height="wrap_content"
+            android:id="@+id/medianoTV"
+            android:textColor="@color/cafe"
+            android:textAlignment="center"
+            android:text="$20"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/cafe"
+            android:id="@+id/grandeTV"
+            android:text="$30"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dotV"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="2dp"
+        android:layerType="software"
+        android:src="@drawable/dotted" />
+
+</LinearLayout>
+
+

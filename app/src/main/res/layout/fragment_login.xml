@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    tools:context=".fragments.access.LoginFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/yasoyparte">
+
+        <ImageButton
+            android:id="@+id/backBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/transparente"
+            android:scaleX="1.5"
+            android:scaleY="2"
+            android:src="@mipmap/flecha_izquierda_blanca" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ingresa_tu_tierra"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/pregunta_correo"
+            android:textColor="@color/cafe2"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/correoET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextstyle"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/cafe2"
+            android:textCursorDrawable="@color/cafe2"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/contraseñaET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextstyle"
+            android:hint="@string/contraseña"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textCursorDrawable="@color/cafe2"
+            android:textColor="@color/cafe2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/olvidadoTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="¿Has olvidado la contraseña?"
+            android:textColor="@color/marron"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:textSize="@dimen/text_size_question" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSize"
+        android:textSize="@dimen/text_size_question"
+        android:layout_marginBottom="15dp"
+        android:background="@mipmap/btonfinalizar"
+        android:text="INICIAR"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="40dp"
+        android:id="@+id/confirmarBttn"
+        android:textColor="@color/white"
+        />
+
+
+
+</LinearLayout>

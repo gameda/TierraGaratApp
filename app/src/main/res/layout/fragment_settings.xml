@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    tools:context=".fragments.main.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:layout_weight=".8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@mipmap/seccion"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backBttn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/tg2"
+                />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="4"
+                android:text="@string/ajustes"
+                android:textSize="15dp"
+                android:paddingBottom="@dimen/ajustes_padding_bttm"
+                android:textColor="@color/cafe2"
+                />
+        </LinearLayout>
+
+        <!--  android:background="@mipmap/tg"-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:id="@+id/tierra"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ajustes_img"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:background="@drawable/marco4">
+
+            <Button
+                android:id="@+id/notificaBttn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparente"/>
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notificaciones"
+                android:textColor="@color/cafe2"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/text3"
+                android:layout_below="@+id/text3"
+                android:text="@string/todas"
+                android:textColor="@color/cafe2"
+                android:layout_alignLeft="@+id/text3" />
+
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="71dp"
+                android:background="@mipmap/anotificaciones"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="71dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:background="@drawable/marco4">
+
+            <Button
+                android:id="@+id/personalBttn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparente"/>
+
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="71dp"
+                android:background="@mipmap/ajustesnaranja"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="71dp" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cafe2"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:text="@string/personal" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text5"
+                android:layout_alignStart="@+id/text5"
+                android:layout_below="@+id/text5"
+                android:textColor="@color/cafe2"
+                android:text="@string/edita_tu_informaci_n" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:background="@drawable/marco4">
+
+            <Button
+                android:id="@+id/permisoBttn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparente"/>
+
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="71dp"
+                android:background="@mipmap/permisos"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="71dp" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cafe2"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:text="@string/permisos" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text7"
+                android:layout_alignStart="@+id/text7"
+                android:layout_below="@+id/text7"
+                android:textColor="@color/cafe2"
+                android:text="@string/uso_de_servicios" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/marco4">
+
+            <Button
+                android:id="@+id/salirBttn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/buttonSize"
+                android:textSize="@dimen/text_size_question"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/btonmanual"
+                android:text="CERRAR SESIÓN"
+                android:textColor="@color/beige" />
+
+
+            <!--<ImageView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="71dp"
+                android:background="@mipmap/ayuda"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="71dp" />
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cafe2"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:text="@string/ayuda" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text9"
+                android:layout_alignStart="@+id/text9"
+                android:layout_below="@+id/text9"
+                android:textColor="@color/cafe2"
+                android:text="@string/preguntas" />-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="30dp"
+android:paddingRight="30dp"
+android:background="@color/beige"
+    android:orientation="vertical"
+tools:context=".fragments.registration.Register2Fragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/backBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:background="@color/transparente"
+            android:scaleX="1.5"
+            android:scaleY="2"
+            android:src="@mipmap/flecha_izquierda"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@mipmap/registro3" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="¿Cúal es tu código postal?"
+            android:textColor="@color/cafe2"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/text_size_question" />
+
+
+        <EditText
+            android:id="@+id/cpET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/question_heigh"
+            android:layout_below="@+id/ciudadET"
+            android:background="@drawable/edittextstyle"
+            android:hint="@string/cp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="5"
+            android:textColor="@color/cafe2"
+            android:textCursorDrawable="@color/cafe2"
+            android:textSize="@dimen/text_size_question" />
+
+        <TextView
+            android:id="@+id/estadoTV"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/question_heigh"
+            android:text="Estado"
+            android:textColor="@color/cafe2"
+            android:gravity="bottom"
+            android:textSize="@dimen/text_size_question"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/ciudadTV"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/question_heigh"
+            android:text="Ciudad o Municipio"
+            android:textColor="@color/cafe2"
+            android:gravity="bottom"
+            android:textSize="@dimen/text_size_question"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/coloniaTV"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/question_heigh"
+            android:text="Colonia:"
+            android:textColor="@color/cafe2"
+            android:gravity="bottom"
+
+            android:textSize="@dimen/text_size_question"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            />
+
+        <RelativeLayout
+            android:id="@+id/coloniaView"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border_spinner"
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/coloniaSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparente"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:autofillHints="DD"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_keyboard_arrow_down_black_36dp"
+                android:scaleY=".8"
+                android:scaleX=".8"
+
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="44dp" />
+
+        <TextView
+            android:id="@+id/avisoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_alignBottom="@+id/checkbox"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="-9dp"
+            android:layout_toRightOf="@+id/checkbox"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="@string/aviso"
+            android:textColor="@color/cafe2" />
+
+
+    </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/nextBttn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonSize"
+            android:textSize="@dimen/text_size_question"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/btonsiquiente"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="25dp"
+            android:text="@string/registrar"
+            android:textColor="@color/beige"
+            android:layout_marginBottom="11dp" />
+
+</LinearLayout>

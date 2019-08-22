@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/carne2"
+    android:orientation="vertical"
+    tools:context=".fragments.main.DashboardFragment">
+
+    <LinearLayout
+        android:id="@+id/qrView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/blur"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingTop="50dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="50dp"
+            android:background="@drawable/codigofondocafe"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/codigofondoblanco"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="17dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/puntos2TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/cafe2"
+                                android:textSize="@dimen/puntos_dash"
+                                tools:ignore="HardcodedText" />
+
+                            <ImageView
+                                android:id="@+id/image2View"
+                                android:layout_width="18dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/estrellita" />
+                        </LinearLayout>
+
+                        <!--<TextView
+                            android:id="@+id/fecha2TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="al dd/mm/yyyy  00:00"
+                            android:textColor="@color/cafe2"
+                            android:textSize="10dp"
+                            tools:ignore="HardcodedText" />-->
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/codigoIV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="15dp"
+                        android:text="ACERCA ESTE CÓDIGO \n AL CAFETERO"
+                        android:textAlignment="center"
+                        android:textColor="@color/cafe2" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text1"
+                        android:layout_centerHorizontal="true"
+                        android:text="Acumula visitas por tu compra"
+                        android:textAlignment="center"
+                        android:textColor="@color/cafe2" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/emptyRL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:visibility="visible"
+            >
+
+            <Button
+                android:id="@+id/regresaBttn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/cafe2"
+                android:text="Regresar"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:scaleX="1.3"
+                    android:scaleY="1.3"
+                    android:src="@drawable/inicioimg" />
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/fondoclarotextura" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sweepLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5">
+
+                    <TextView
+                        android:id="@+id/deslizaTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/desliza"
+                        android:textColor="@color/beige"
+                        android:textSize="7sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@+id/deslizaTV"
+                        android:layout_toRightOf="@+id/deslizaTV"
+                        android:background="@mipmap/ic_refresh" />
+
+                    <TextView
+                        android:id="@+id/saludoTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:text="Hola!"
+                        android:textAlignment="center"
+                        android:textColor="@color/carne"
+                        android:textSize="20sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/nombreTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/saludoTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:text="Daniel"
+                        android:textColor="@color/carne"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/card"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/faltantesTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/carne2"
+                            android:letterSpacing="-0.05"
+                            android:padding="8dp"
+                            android:text="¡Te faltan N visitas para tener tu bebida gratis!"
+                            android:textAlignment="center"
+                            android:textColor="@color/cafe" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:paddingLeft="25dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="25dp"
+                            android:paddingBottom="20dp">
+
+                            <ImageView
+                                android:id="@+id/vaso1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/marron"
+                                android:padding="10dp"
+                                android:src="@mipmap/cafeicon"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/vaso2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/marron"
+                                android:padding="10dp"
+                                android:src="@mipmap/cafeicon"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/vaso3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/marron"
+                                android:padding="10dp"
+                                android:src="@mipmap/cafeicon"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/vaso4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/marron"
+                                android:padding="10dp"
+                                android:src="@mipmap/cafeicon"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/vaso5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/marron"
+                                android:padding="10dp"
+                                android:src="@mipmap/cafeicon"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/vaso6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/marron"
+                                android:padding="10dp"
+                                android:src="@mipmap/cafeicon"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/unoTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/carne2"
+                                android:padding="12dp"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textColor="@color/cafe"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/dosTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/carne2"
+                                android:padding="12dp"
+                                android:text="2"
+                                android:textAlignment="center"
+                                android:textColor="@color/cafe"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tresTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/carne2"
+                                android:padding="12dp"
+                                android:text="3"
+
+                                android:textAlignment="center"
+                                android:textColor="@color/cafe"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/cuatroTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/carne2"
+                                android:padding="12dp"
+                                android:text="4"
+                                android:textAlignment="center"
+                                android:textColor="@color/cafe"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/cincoTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/carne2"
+                                android:padding="12dp"
+                                android:text="5"
+                                android:textAlignment="center"
+                                android:textColor="@color/cafe"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/seisTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/carne2"
+                                android:padding="12dp"
+                                android:text="6"
+                                android:textAlignment="center"
+                                android:textColor="@color/cafe"
+                                android:visibility="visible" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/parrafo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".2"
+                    android:letterSpacing="-0.05"
+                    android:text="Junta 6 visitas para una bebida gratis\n en tu proxima compra."
+                    android:textColor="@color/cafe" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/parrafo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:letterSpacing="-0.05"
+                            android:lineSpacingMultiplier="1.2"
+                            android:padding="10dp"
+                            android:scrollbars="vertical"
+                            android:text="¡Ven a Tierra Garat!\n\nDa click en Suma vistias y Obtén tu bebida,\nacerca tu teléfono con el código QR al \ncafetero para registar visitas o canjear \ntu bebida.  "
+                            android:textColor="@color/cafe" />
+
+                        <Button
+                            android:id="@+id/sumaBttn"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".35"
+                            android:background="@color/cafe2"
+                            android:clickable="false"
+                            android:letterSpacing="-0.05"
+                            android:text="SUMA VISITAS"
+                            android:textColor="@color/cafe_claro" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

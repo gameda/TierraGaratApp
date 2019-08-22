@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/beige"
+tools:context=".fragments.access.recuperarContraseña.Recuperar3Fragment">
+
+
+    <RelativeLayout
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cafe4"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/sloganTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/loadIV"
+            android:text="Muy pronto estarás\nen tu Tierra."
+            android:textAlignment="center"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/loadIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/loadergarat"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contraseñaView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/backBttn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:background="@color/transparente"
+                android:scaleX="1.5"
+                android:scaleY="2"
+                android:src="@mipmap/flecha_izquierda"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:id="@+id/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@mipmap/registro3" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Restablecer contraseña"
+                android:textAlignment="center"
+                android:textColor="@color/cafe2"
+                android:textSize="@dimen/text_size_question" />
+
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/space_btwn_questions"
+                android:text="Crea una nueva forma de ingresar a tu tierra."
+                android:textAlignment="center"
+                android:textColor="@color/cafe2"
+
+                android:textSize="@dimen/text_size_question" />
+
+
+            <TextView
+                android:id="@+id/contraseñaTV"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/space_btwn_questions"
+                android:text="- Nueva contraseña"
+                android:textColor="@color/cafe2"
+                android:textSize="@dimen/text_size_question" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/contraseñaET"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/question_heigh"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="@string/ocho_caracteres"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:layout_gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/cafe2"
+                    android:textCursorDrawable="@color/cafe2"
+                    android:textSize="@dimen/text_size_question" />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/check"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/confirmarTV"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="bottom"
+                android:layout_marginTop="15dp"
+                android:text="- Confirma tu nueva contraseña"
+                android:textColor="@color/cafe2"
+                android:textSize="@dimen/text_size_question" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/confirmarET"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/question_heigh"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="@string/ocho_caracteres"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/cafe2"
+                    android:textCursorDrawable="@color/cafe2"
+                    android:visibility="visible"
+                    android:textSize="@dimen/text_size_question" />
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/check"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textAlignment="center"
+                android:textColor="@color/cafe2"
+                android:textSize="@dimen/comple_datos" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextBttn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonSize"
+            android:textSize="@dimen/text_size_question"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/btonsiquiente"
+            android:text="FINALIZAR"
+            android:gravity="center"
+            android:textColor="@color/beige"
+            android:paddingLeft="25dp"
+            android:layout_marginBottom="11dp"/>
+    </LinearLayout>
+</LinearLayout>

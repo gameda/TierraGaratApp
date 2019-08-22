@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    tools:context=".fragments.main.LocationFragment">
+
+    <LinearLayout
+        android:id="@+id/locationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:background="@color/beige"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cafe_mas_claro"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/ocultarBttn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/transparente"
+                android:paddingLeft="10dp"
+                android:text="OCULTAR SUCURSALES"
+                android:textAlignment="textStart"
+                android:textColor="@color/cafe2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="136dp"
+                android:layout_marginRight="136dp"
+                android:background="@mipmap/ic_keyboard_arrow_up_black_36dp" />
+
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:id="@+id/sucursalLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scrollbars="none">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:padding="19dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@mipmap/seccion"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cdmxTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:text="CDMX"
+                    android:textColor="@color/cafe2"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/sucursalTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="SUCURSALES"
+                    android:textColor="@color/cafe2"
+                     />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <fragment
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:visibility="visible"
+        />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:orientation="horizontal"
+            android:background="@color/cafe_mas_claro"
+            android:gravity="center_vertical"
+            >
+            <Button
+                android:id="@+id/verBttn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/transparente"
+                android:paddingLeft="20dp"
+                android:text="@string/ver_sucursales"
+                android:textAlignment="textStart"
+                android:textColor="@color/cafe2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="97dp"
+                android:layout_marginRight="97dp"
+                android:background="@mipmap/ic_keyboard_arrow_down_black_36dp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

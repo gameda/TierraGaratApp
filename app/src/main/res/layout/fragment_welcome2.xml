@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/view1"
+    tools:context=".fragments.welcome.Welcome2Fragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view"
+        android:src="@drawable/ubicatiendas"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@mipmap/ubicatiendas_texto" />
+
+    <!--
+        <TextView
+            android:id="@+id/ubicaTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tiendasTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-100dp"
+            android:text="Ubica todas nuestras "
+            android:textColor="@color/cafe_mas_claro"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tiendasTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="SUCURSALES"
+            android:textAlignment="center"
+            android:textColor="@color/cafe_mas_claro"
+            android:textSize="20sp" />
+            -->
+
+</RelativeLayout>

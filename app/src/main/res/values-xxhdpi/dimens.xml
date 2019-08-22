@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_question">15sp</dimen>
+    <dimen name="comple_datos">15dp</dimen>
+    <dimen name="question_heigh">45dp</dimen>
+    <dimen name="space_btwn_questions">10dp</dimen>
+    <dimen name="square_dash">180dp</dimen>
+    <dimen name="button_mas_heigh">35dp</dimen>
+    <dimen name="button_mas_width">180dp</dimen>
+    <dimen name="button_mas_bottom">18dp</dimen>
+    <dimen name="data_dash_margin_top">60dp</dimen>
+    <dimen name="name_dash">20sp</dimen>
+    <dimen name="puntos_dash">30sp</dimen>
+    <dimen name="suma_text">15sp</dimen>
+    <dimen name="ajustes_padding_bttm">0dp</dimen>
+    <dimen name="back">490dp</dimen>
+    <dimen name="circle">60dp</dimen>
+    <dimen name="buttonSize">60dp</dimen>
+
+
+
+
+
+
+</resources>

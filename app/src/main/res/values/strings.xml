@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Tierra Garat</string>
+    <string name="bienvenido">Bienvenido a Círculo Garat </string>
+    <string name="frase">Recompensamos tu preferecia</string>
+    <string name="ya_eres_parte">¿YA ERES PARTE </string>
+
+    <string name="ingresa_o_registra">Ingresa a tu  cuenta o regístrate</string>
+    <string name="ya_soy">YA SOY PARTE</string>
+    <string name="uno_no">AÚN NO</string>
+    <string name="ingresa_tu_tierra">INGRESA A TU TIERRA</string>
+    <string name="text_facebook">Para tu convivencia, puedes ingresar usando tu Facebook:</string>
+    <string name="via_facebook">VIA FACEBOOK</string>
+    <string name="o_ingresa_correo">O Ingresa tu correo:</string>
+    <string name="correo">Correo Electrónico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="confirmar">CONFIRMAR</string>
+    <string name="title_activity_register">Register</string>
+    <string name="resgis">REGISTRO</string>
+    <string name="text2">Puedes usar Facebook o hacerlo de forma manual</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="manual">INGRESA CON TU CORREO</string>
+    <string name="noms">Escribe tu nombre(s)</string>
+    <string name="apells">Escribe tu apellido(s)</string>
+    <string name="pregunta_nombre"> - ¿Cúal es tu nombre?</string>
+    <string name="pregunta_apellido"> - ¿Cúal es tu apellido?</string>
+    <string name="pregunta_sexo"> - ¿Cuál es tu sexo?</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="otro">Otro</string>
+    <string name="pregunta_nacimiento"> - ¿Qué día naciste?</string>
+    <string name="pregunta_telefono"> - ¿Cuál es tu teléfono?</string>
+    <string name="ingresa_tel">Escribe tu teléfono celular</string>
+    <string name="pregunta_correo"> - ¿Cuál es tu correo?</string>
+    <string name="ingresa_correo">Escribe tu correo electrónico</string>
+    <string name="pregunta_password"> - Escribe tu contraseña</string>
+    <string name="minimo_password">Contraseña de 8 caracteres</string>
+    <string name="confirma_contraseña"> - Confirma tu contraseña</string>
+    <string name="pregunta_direccion"> - ¿Cuál es tu dirección?</string>
+    <string name="calle">Calle</string>
+    <string name="n_int">No. Int</string>
+    <string name="n_ext">No. Ext</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="cp">C.P.</string>
+    <string name="acumula">Acumula Puntos</string>
+    <string name="text_acumula">Cada compra acumula puntos y así obtienes beneficios exclusivos</string>
+    <string name="ubica">UBICA</string>
+    <string name="text_ubica">Ubica tu suscursal más cercana</string>
+    <string name="notificaciones">NOTIFICACIONES</string>
+    <string name="text_notificaciones">Te avisamos sobre cosas nuevas que debes probar y beneficios limitados</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_locations">Locations</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_settings">Settings</string>
+    <string name="proximos_beneficios">PRÓXIMOS BENEFICIOS</string>
+    <string name="suma_puntos">SUMA PUNTOS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="nombre">NOMBRE</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="sucursales_cercanas">SUCURSALES CERCANAS</string>
+    <string name="ajustes">AJUSTES</string>
+    <string name="todas">TODAS</string>
+    <string name="personal">PERSONAL</string>
+    <string name="edita_tu_informaci_n">EDITA TU INFORMACIÓN</string>
+    <string name="permisos">PERMISOS</string>
+    <string name="uso_de_servicios">USO DE SERVICIOS</string>
+    <string name="ayuda">AYUDA</string>
+    <string name="preguntas">¿PREGUNTAS?</string>
+    <string name="saltar">SALTAR</string>
+    <string name="empezar">EMPEZAR</string>
+
+    <string name="facebook_app_id">544605602632766</string>
+    <string name="fb_login_protocol_scheme">fb544605602632766=</string>
+    <string name="tiendas">TIENDAS</string>
+    <string name="de_nuestro_circulo">DE NUESTRO CÍRCULO?</string>
+    <string name="rapido">RÁPIDO</string>
+    <string name="paraInicial">Para iniciar puedes usar tu correo electrónico.</string>
+    <string name="completa_los_datos_para_comenzar">Completa los datos para comenzar</string>
+    <string name="ver_sucursales_cercanas">VER SUCURSALES CERCANAS ^</string>
+    <string name="siguiente">SIGUIENTE</string>
+    <string name="ocho_caracteres">Contraseña de 8 caracteres</string>
+    <string name="ver_sucursales">VER SUCURSALES CERCANAS</string>
+    <string name="beneficios">BENEFICIOS</string>
+    <string name="Distancia">000   km</string>
+    <string name="desliza_para_acualizar">DESLIZA PARA ACUALIZAR</string>
+    <string name="desliza">DESLIZA PARA ACTUALIZAR</string>
+    <string name="escribe_tu_direcci_n">Escribe tu dirección</string>
+    <string name="quintales">QUINTALES</string>
+    <string name="pref_previously_started">first_opened</string>
+    <string name="domicilio">Domicilio</string>
+    <string name="contrase_a_nueva">CONTRASEÑA NUEVA</string>
+    <string name="contrasena_nueva">Contraseña nueva</string>
+    <string name="contrasena">CONTRASEÑA</string>
+    <string name="domicili">DOMICILIO</string>
+    <string name="aviso">Acepto las <a href="http://www.tierragarat.mx/index.html#manifiesto">Condiciones del servicio</a> y las  <a href="http://www.tierragarat.mx/aviso_privacidad.html">Políticas de privacidad</a> de Tierra Garat</string>
+    <string name="registrar">REGISTRAR</string>
+    <string name="novedades">NOVEDADES</string>
+
+
+    <integer-array name="welcome_img">
+        <item>@drawable/acumulavisitas</item>
+        <item>@drawable/bebidagratis</item>
+        <item>@drawable/ubicatiendas</item>
+    </integer-array>
+</resources>

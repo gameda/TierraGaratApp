@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.WelcomeActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/containerRL"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containterViewPager">
+        </android.support.v4.view.ViewPager>
+
+
+
+        <TextView
+            android:id="@+id/tituloTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/cafe"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:background="@color/beige"
+        android:padding="4dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabDots"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            android:layout_marginTop="10dp"
+            app:tabIndicatorHeight="0dp"/>
+
+        <TextView
+            android:id="@+id/fraseTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabDots"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:text="Y obtén beneficios\nespeciales."
+            android:textAlignment="center"
+            android:textColor="@color/cafe2"
+            android:textSize="@dimen/name_dash" />
+
+
+
+        <Button
+            android:id="@+id/nextBttn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/btonmanualhover"
+            android:text="@string/empezar"
+            android:textSize="@dimen/text_size_question"
+            android:textColor="@color/carne2"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
